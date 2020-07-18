@@ -1,6 +1,7 @@
 <template>
   <div>
-    <xx-dialog></xx-dialog>
+    <div :is="cname"></div>
+    <el-button @click="toggle">xx</el-button>
   </div>
 </template>
 
@@ -12,11 +13,14 @@ export default {
   },
   data () {
     return {
-      show: false
+      show: false,
+      cname: 'el-button'
     }
   },
   methods: {
-
+    toggle () {
+      this.cname = this.cname === 'el-button' ? 'el-input' : 'el-button'
+    }
   }
 }
 </script>
