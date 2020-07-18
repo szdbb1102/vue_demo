@@ -1,18 +1,16 @@
 <template>
-  <div>
-    <xx-dialog></xx-dialog>
-  </div>
+  <div>dialog</div>
 </template>
 
 <script>
 export default {
-  name: 'home',
+  name: 'xx-dialog',
   components: {
 
   },
   data () {
     return {
-      show: false
+
     }
   },
   methods: {
