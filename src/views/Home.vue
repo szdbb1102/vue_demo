@@ -1,18 +1,26 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <el-dialog :visible.sync='show'></el-dialog>
+    <el-button @click="show=!show">xx</el-button>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'Home',
+  name: 'home',
   components: {
-    HelloWorld
+
+  },
+  data () {
+    return {
+      show: false
+    }
+  },
+  methods: {
+
   }
 }
 </script>
+
+<style lang='scss' scoped>
+</style>
