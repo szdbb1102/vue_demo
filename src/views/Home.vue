@@ -1,8 +1,7 @@
 <template>
   <div>
     Home
-    <el-button @click="test">xx</el-button>
-    {{a}}
+    <el-button v-xx.a='a' @click="test">xx</el-button>
   </div>
 </template>
 
@@ -14,11 +13,15 @@ export default {
   },
   data () {
     return {
+      a: { b: 1 },
       xx: 1
     }
   },
   beforeMount () {
-    console.log(this.$el, this.$data)
+    console.log(1)
+  },
+  mounted () {
+    console.log(2)
   },
   updated () {
     console.log('update')
