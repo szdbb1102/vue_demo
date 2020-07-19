@@ -1,7 +1,7 @@
 <template>
   <div>
     Home
-    <el-button v-xx.a='a' @click="test">xx</el-button>
+    <div v-xxloading='show'></div>
   </div>
 </template>
 
@@ -14,14 +14,13 @@ export default {
   data () {
     return {
       a: { b: 1 },
-      xx: 1
+      show: true
     }
   },
-  beforeMount () {
-    console.log(1)
-  },
   mounted () {
-    console.log(2)
+    setTimeout(() => {
+      this.show = false
+    }, 3000)
   },
   updated () {
     console.log('update')

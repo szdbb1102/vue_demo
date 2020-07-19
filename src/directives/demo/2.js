@@ -18,7 +18,6 @@ Vue.directive('xxloading', {
   unbind (el, binding) {
     console.log('unbind')
     const mask = el.instance.$el
-    console.log(el === mask.parentNode)
     el.removeChild(mask)
     el.instance.$destroy()
     el.instance = undefined
