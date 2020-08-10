@@ -13,6 +13,11 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }  
   }, 
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "dependencies": {
     "core-js": "^3.6.5",
     "element-ui": "^2.13.2",
