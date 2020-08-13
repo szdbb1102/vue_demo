@@ -9,7 +9,6 @@ import 'element-ui/lib/theme-chalk/index.css'
 import '@/components'
 import '@/directives'
 Vue.use(ElementUI)
-
 Vue.config.productionTip = false
 
 new Vue({
