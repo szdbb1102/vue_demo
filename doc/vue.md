@@ -7,6 +7,8 @@
 2. render函数
    1. 默认有个参数h 或者叫做createElement
       1. 是个函数- 可以返回一个vnode
+      2. 好处 比模板更贴近编译器 能力更强大
+         1. [demo](./render.js)
    2. 使用技巧
       1. 可以在render函数中访问this.$slots.default等 对vnode进行改造
    3. render函数最终要返回一个vnode
